@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            min-height: 200vh; 
+            width: 100vw; 
+            background-image: url('Boba.jpeg');
+            background-size: contain; 
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: local;
+            position: relative; 
+        }
+
+        .button-container1 {
+            position: absolute; 
+            top: 33%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 100%; 
+        }
+        .button-container2 {
+            position: absolute; 
+            top: 54%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 100%; 
+        }
+
+        .button1 { 
+            position: absolute; 
+            top: 80%; 
+            left: 19%; 
+        }
+
+        .button2 { 
+            position: absolute; 
+            top: 30%; 
+            left: 50%; 
+            
+        }
+
+        .button3 { 
+            position: absolute; 
+            top: 80%; 
+            left: 19%;
+        }
+
+        .button4 { 
+            position: absolute; 
+            top: 30%; 
+            left: 50%; 
+        }
+
+        button {
+            background-color: transparent; 
+            border: none; 
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button img {
+            width: 220px; 
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"> 
+
+        <div class="button-container1">
+            <button class="button1" onclick="alert('Pink Boba')">
+                <img src="PB.jpeg" alt="Borscht Soup">
+            </button>
+            <button class="button2" onclick="alert('Blue Boba')">
+                <img src="BB.jpeg" alt="Dumpling">
+        </div>
+        <div class="button-container2">
+            <button class="button3" onclick="alert('Yellow Boba')">
+                <img src="YB.jpeg" alt="Butter Chicken">
+            </button>
+            <button class="button4" onclick="alert('Brown Boba')">
+                <img src="BrB.jpeg" alt="Pasta">
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
